@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "San Francisco";
+    /* font-weight: 400; */
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+@font-face {
+    font-family: "San Francisco-bold";
+    /* font-weight: 400; */
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-heavy-webfont.woff");
+}
+
+
+
+.root{
+    margin: 0;
+    font-family: San Francisco;
+    padding: 1rem 2rem 0 2rem ;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.n-2{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.n-2-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bd{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bd-2{
+    padding: 2rem;
+}
+
+.bd-hd{
+    font-weight: 800;
+    font-size: 5rem;
+    padding: 4rem 0;
+    font-family: San Francisco-bold;
+}
+
+button{
+    border: none;
+    background-color:#FF7F66 ;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    margin: 4rem 0 ;
+    cursor: pointer;
+}
+
+.bd-1 p{
+    color: #333A4D;
+    padding: 3rem 0 ;
+    font-size: 1.5rem;
+}
+
+.hidden{
+    display: none;
+}
+
+.n-2-2{
+    padding: 2rem 0;
+    border-bottom: 1px solid #333A4D;
+    width: 100%;
+    margin: 0;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.display{
+    display: flex;
+    flex-direction: column;
+}
+.toggle{
+    display: none;
+}
+
+.bdd{
+    display:  none;
+}
+
+
+
+/* small screens */
+
+@media only screen and (max-width:950px){
+
+    body{
+        margin: 0;
+    }
+
+    .root{
+        padding: 0;
+    }
+
+    .navbar{
+        padding: 2rem ;
+    }
+
+    .n-2{
+        display: none;
+    }
+    .toggle{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        cursor: pointer;
+
+    }
+
+    .bd{
+        display: none;
+    }
+    
+    .bdd{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bdd-im{
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .bdd-im svg{
+        height: 25rem;
+        width: auto;
+    }
+
+    .bdd-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .bdd-hd {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .bdd-2 p{
+        color: #333A4D;
+        font-size: 1.1rem;
+        padding-top: 1rem;
+    }
+    button{
+        margin: 2rem 0;
+    }
+}
